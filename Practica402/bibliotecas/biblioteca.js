@@ -17,10 +17,17 @@ export const magiaAparecer = () => {
 };
 
 //Ejercicio 02
-export const name2 = () => {
-
-};
-
-export const name3 = () => {
-
+//Función para abrir la pestaña correspondiente o cerrarla si ya está abierta.
+export const activarPestana = (pestana) => {
+    //Verifica si la pestaña ya tiene la clase "activa" para permitir cerrar la pestaña al hacer clic nuevamente sobre ella.
+    if(document.getElementsByClassName("tab")[pestana].classList.contains("activa")){
+        document.getElementsByClassName("tab")[pestana].classList.remove("activa");
+        document.getElementsByClassName("info")[pestana].classList.remove("activa");
+    }else{
+        //Si no tiene la clase "activa", significa que no hay pestañas abiertas o que la pestaña que queremos abrir está cerrada.
+        for (let i = 0; i < document.getElementsByClassName("tab").length; i++) {
+            document.getElementsByClassName("tab")[i].classList.toggle("activa", i === pestana);
+            document.getElementsByClassName("info")[i].classList.toggle("activa", i === pestana);
+        };
+    };
 };
