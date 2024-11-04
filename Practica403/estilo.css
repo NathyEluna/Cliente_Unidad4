@@ -10,6 +10,10 @@
     background-color: white;
 }
 
+.white.pintura-celda{
+    border: 1px solid gray;
+}
+
 .black{
     background-color: black;
 }
@@ -30,28 +34,50 @@
     background-color: rgb(0, 126, 230);
 }
 
-.border{
-    border: 0.5px solid black;
+.border, .border.white{
+    border: 3px solid rgb(220, 44, 255);
 }
 
-/*DIV 1*/
-#herramientas{
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    background-color: blueviolet;
+/* CONTAINER */
+
+#container{
+    width: 1400px;
+    padding: 10px;
+    background-color: darkslategrey;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
 }
 
-#herramientas td{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+/*DIV 1*/
+#pintura{
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-#herramientas td:hover{
+#pintura-tabla{
+    border-collapse: separate;
+    border-spacing: 7px;
+}
+
+.pintura-celda{
+    width: 20px;
+    height: 20px;
+}
+
+.pintura-celda:hover{
     cursor: pointer;
+}
+
+.pintura-celda, #pintura tr{
+    padding: 5px;
 }
 
 caption {
@@ -79,18 +105,24 @@ button:active{
     background-color: rgb(211, 210, 210);
 }
 
-
-
-
 /*DIV 2*/
 #lienzo{
-    display: inline-block;
-    width: 60vw;
-    background-color: chartreuse;
+    width: 850px;
+    padding: 6px 0 6px 0;
+    background-color: white;
+    border-radius: 10px;
 }
 
-#lienzo td{
+#lienzo-tabla{
+    width: 800px;
+    height: 670px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+
+.lienzo-celda{
     width: 10px;
     height: 10px;
-    border: 0.5px solid red;
+    border: 1px solid rgb(215, 215, 215);
 }

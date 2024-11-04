@@ -7,22 +7,24 @@
     <title>Pintarajea</title>
 </head>
 <body>
-    <div id="herramientas">
-        <table>
-            <caption>Colores</caption>
-            <tr>
-                <td class="white"></td>
-                <td class="black"></td>
-                <td class="red"></td>
-                <td class="yellow"></td>
-                <td class="green"></td>
-                <td class="blue"></td>
-            </tr>
-        </table>
-        <button id="borrar">Borrar</button>
-    </div>
+    <div id="container">
+        <div id="pintura">
+            <table id="pintura-tabla">
+                <caption>Colores</caption>
+                <tr>
+                    <td class="white pintura-celda"></td>
+                    <td class="black pintura-celda"></td>
+                    <td class="red pintura-celda"></td>
+                    <td class="yellow pintura-celda"></td>
+                    <td class="green pintura-celda"></td>
+                    <td class="blue pintura-celda"></td>
+                </tr>
+            </table>
+            <button id="borrar">Borrar</button>
+        </div>
 
-    <div id="lienzo">
+        <div id="lienzo">
+        </div>
     </div>
     <script type="module" src="script.js"></script>
 </body>
