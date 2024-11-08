@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PIEZAS */
+#piezas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 30px auto;
+    width: 99%;
+    padding: 15px;
+    border: 2px solid rgb(8, 8, 212);
+    border-radius: 5px;
+    background-color: rgb(149, 27, 197);
+}
+.pieza {
+    width: 300px;  /* Tamaño fijo de las piezas */
+    height: 169px; /* Tamaño fijo de las piezas */
+   
+    cursor: grab;
+}
+
+/* PANEL */
+#panel{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 169px);
+    width: 900px;
+    margin: 30px auto;
+    gap: 0.8px;
+}
+
+.grilla{
+    width: 300px;
+    height: 169px;
+    border: 1px solid rgb(149, 27, 197);
+}
+
+.button{
+    margin: auto;
+    padding: 20px;
+}
+
+#reset{
+    font-size: 15px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(149, 27, 197);
+    color: white;
+}
+
+#reset:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(8, 8, 212);
+}
+
+p{
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
