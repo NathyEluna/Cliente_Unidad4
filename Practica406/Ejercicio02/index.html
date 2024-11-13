@@ -7,7 +7,29 @@
     <title>Ejercicio 02</title>
 </head>
 <body>
-    
+    <form id="form">
+        <fieldset>
+            <legend>Creación de Párrafos</legend>
+            <label for="">Escribe el texto deseado para la creación de tu párrafo:</label>
+            <br>
+            <textarea id="text" placeholder="Escribe tu texto aquí"></textarea>
+            <br>
+            <label for="estilo">Selecciona un estilo de fuente:</label>
+            <br>
+            <select id="estilo">
+                <option value="" >Selecciona un estilo de fuente:</option>
+                <option value="estilo-1">Azul-Negrita</option>
+                <option value="estilo-2">Verde-Itálico</option>
+                <option value="estilo-3">Rojo-Subrayado</option>
+            </select>
+            <br>
+            <button type="button" id="crear-parrafo">Crear Párrafo</button>
+        </fieldset>
+    </form>
+
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+
     <script type="module" src="./script.js"></script>
 </body>
 </html>

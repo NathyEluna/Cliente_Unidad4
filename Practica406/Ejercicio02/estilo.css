@@ -1,0 +1,62 @@
+label{
+    margin: 10px;
+}
+
+textarea{
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    background-color: rgb(252, 244, 232);
+    border: 2px solid rgb(76, 43, 43);
+    border-radius: 5px;
+}
+
+select{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(252, 244, 232);
+    color: black;
+    border: 3px solid rgb(76, 43, 43);
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(76, 43, 43);
+    color: white;
+    border: 3px solid rgb(143, 140, 136);
+}
+
+h2{
+    margin: 15px;
+}
+
+#resultado{
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#resultado p{
+    margin: auto;
+    text-align: center;
+}
+
+.estilo-1{
+    color: blue;
+    font-weight: bold;
+}
+
+.estilo-2{
+    color: green;
+    font-style: italic;
+}
+
+.estilo-3{
+    color: red;
+    text-decoration: underline;
+}
