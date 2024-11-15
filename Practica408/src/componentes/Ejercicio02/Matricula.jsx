@@ -11,7 +11,7 @@ const Matricula = () => {
             return discente.curso === "2DAW";
         });
 
-        setDiscentes();
+        setDiscentes(daw2);
     };
 
     return (
@@ -25,7 +25,7 @@ const Matricula = () => {
         <button>Ordenar Apellidos</button>
         <button>Reiniciar</button>
         <div>
-            <Discentes discentes={listado.discentes}/>
+            <Discentes discentes={discentes}/>
         </div>
     </>
   )
