@@ -10,13 +10,19 @@ const Listado = () => {
   //Función para borrar el listado.
   const borrarListado = () => {
     setListado([]);
-  }
+  };
 
   return (
     <>
       <div>
-        <button onClick={generarNumeroAleatorio(listado, setListado)}>Generar</button>
-        <button onClick={borrarListado()}>Eliminar</button>
+        <button onClick={() => {
+          generarNumeroAleatorio(listado, setListado);
+        }}>Generar</button>
+
+        <button onClick={() => {
+          borrarListado();
+        }}>Eliminar</button>
+
         <ul>
           {listado.map((num) => {
             return (

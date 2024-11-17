@@ -2,7 +2,7 @@ import { generarUuidAleatorio } from "../../bibliotecas/biblioteca.js";
 import Discente from "./Discente.jsx";
 
 const Discentes = (props) => {
-    const {discentes} = props;
+    const {discentes, headshot} = props;
     
     return(
         <>
@@ -16,7 +16,9 @@ const Discentes = (props) => {
                                 apellidos={discente.apellidos}
                                 curso={discente.curso}
                                 aficiones={discente.aficiones}
-                                comida={discente.comida}/>
+                                comida={discente.comida}
+                                headshot={headshot}
+                            />
                         );
                     })
                 }
